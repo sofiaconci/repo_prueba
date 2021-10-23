@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Buffalo Lounge</title>
+    
+</head>
+<body>
+    
+    <header>
+        <a href="inicio.html"><img src="img/logo.png" alt="Logo"></a>
+        <nav class="navegador">
+            <li> 
+                <a href="#" class="seccion_activa">INICIO</a>
+            </li>
+            <li> 
+                <a href="hospedaje.html">HOSPEDAJE</a>
+            </li>
+            <li>
+                <a href="experiencias.html">EXPERIENCIAS</a>
+            </li>
+            <li>
+                <a href="ubicacion.html">UBICACION</a>
+            </li>
+            <li>
+                <a href="contacto.html">CONTACTO</a>
+            </li>
+        </nav>
+    </header>
+
+    <main>
+        <div class="titulos">
+            <h1 class="titulo_principal" >BUFFALO LONGE</h1>
+            <h2 class="titulo_secundario">BIENVENIDOS A COSTA AZUL</h2>
+        </div>
+
+        <div class="inicio">
+            <div class="inicio_texto">
+                <h2 id="inicio"></h2>
+                <p > Buffalo Lounge está diseñado para brindar armonía y bienestar, esto es lo que te ofrece: levantarte frente al mar y recibir los primeros rayos de sol tomando un té desde tu terraza en la playa. Somos AMIGOS DE MASCOTAS. Tenemos 3 mascotas en el lugar: 1 perro muy amigable tiene 7 años y su nombre es Sammy y 2 gatos muy tranquilos alrededor de la propiedad.</p>
+            </div>
+            <div class="inicio__img">
+                <img class="inicio_img--transf" src="img/inicio.jpeg" alt="inicio" >
+            </div>
+        </div>
+
+        
+        
+    
+    </main>
+    
+    <footer>
+        <div class="seguinos">
+            <h3>SEGUINOS</h2>
+            <p>ENTERATE DE LAS ULTIMAS NOVEDADES</p>
+            <form action="#" method="POST">
+            <input type="email" placeholder="Ingresá tu email" id="email" required>
+            <button type="submit" class="boton">ENVIAR</button>
+            </form>
+        </div>
+        <div class="contacto">
+            <h3>Contacto</h2>
+            <form action="#" method="POST"> 
+                <input type="email" placeholder="Nombre" id="nombre" required>
+                <input type="email" placeholder="Email" id="emailContacto" required>
+                <textarea placeholder="Mensaje" rows="6" cols="40" id="mensaje"></textarea>
+                <button type="submit" class="boton">ENVIAR</button>
+            </form>
+        </div>       
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
