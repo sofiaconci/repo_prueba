@@ -5,27 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
     <title>HOSPEDAJE</title>
 </head>
 <body>
     <header>
-        <a href="inicio.html"><img src="img/logo.png" alt="Logo"></a>
-        <nav class="navegador">
-            <li> 
-                <a href="inicio.html" >INICIO</a>
-            </li>
-            <li> 
-                <a href="#" class="seccion_activa">HOSPEDAJE</a>
-            </li>
-            <li>
-                <a href="experiencias.html">EXPERIENCIAS</a>
-            </li>
-            <li>
-                <a href="ubicacion.html">UBICACION</a>
-            </li>
-            <li>
-                <a href="contacto.html">CONTACTO</a>
-            </li>
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" aria-current="page"  href="index.html" >INICIO</a>
+                        <a class="nav-link active" href="hospedaje.html">HOSPEDAJE</a>
+                        <a class="nav-link" href="experiencias.html">EXPERIENCIAS</a>
+                        <a class="nav-link" href="ubicacion.html">UBICACION</a>
+                        <a class="nav-link" href="contacto.html">CONTACTO</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -49,7 +50,7 @@
     </main>
     <footer>
         <div class="seguinos">
-            <h3>SEGUINOS</h2>
+            <h2>SEGUINOS</h2>
             <p>ENTERATE DE LAS ULTIMAS NOVEDADES</p>
             <form action="#" method="POST">
             <input type="email" placeholder="Ingresá tu email" id="email" required>
@@ -57,7 +58,7 @@
             </form>
         </div>
         <div class="contacto">
-            <h3>Contacto</h2>
+            <h2>Contacto</h2>
             <form action="#" method="POST"> 
                 <input type="email" placeholder="Nombre" id="nombre" required>
                 <input type="email" placeholder="Email" id="emailContacto" required>
@@ -66,5 +67,8 @@
             </form>
         </div>       
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.min.js"></script>
 </body>
 </html>

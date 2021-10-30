@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
 
     <title>Buffalo Lounge</title>
     
@@ -13,39 +14,56 @@
 <body>
     
     <header>
-        <a href="inicio.html"><img src="img/logo.png" alt="Logo"></a>
-        <nav class="navegador">
-            <li> 
-                <a href="#" class="seccion_activa">INICIO</a>
-            </li>
-            <li> 
-                <a href="hospedaje.html">HOSPEDAJE</a>
-            </li>
-            <li>
-                <a href="experiencias.html">EXPERIENCIAS</a>
-            </li>
-            <li>
-                <a href="ubicacion.html">UBICACION</a>
-            </li>
-            <li>
-                <a href="contacto.html">CONTACTO</a>
-            </li>
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page"  href="index.html" >INICIO</a>
+                        <a class="nav-link" href="hospedaje.html">HOSPEDAJE</a>
+                        <a class="nav-link" href="experiencias.html">EXPERIENCIAS</a>
+                        <a class="nav-link" href="ubicacion.html">UBICACION</a>
+                        <a class="nav-link" href="contacto.html">CONTACTO</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
-        <div class="titulos">
-            <h1 class="titulo_principal" >BUFFALO LONGE</h1>
-            <h2 class="titulo_secundario">BIENVENIDOS A COSTA AZUL</h2>
+        <div class="container">
+            <h1 class="titulo_principal  p-5" >BUFFALO LONGE</h1>
+            <h2 class="titulo_secundario p-5">BIENVENIDOS A COSTA AZUL</h2>
         </div>
 
-        <div class="inicio">
-            <div class="inicio_texto">
+        <div class="container">
+            <div class="p-4">
                 <h2 id="inicio"></h2>
                 <p > Buffalo Lounge está diseñado para brindar armonía y bienestar, esto es lo que te ofrece: levantarte frente al mar y recibir los primeros rayos de sol tomando un té desde tu terraza en la playa. Somos AMIGOS DE MASCOTAS. Tenemos 3 mascotas en el lugar: 1 perro muy amigable tiene 7 años y su nombre es Sammy y 2 gatos muy tranquilos alrededor de la propiedad.</p>
             </div>
-            <div class="inicio__img">
-                <img class="inicio_img--transf" src="img/inicio.jpeg" alt="inicio" >
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/inicio.jpeg" class="d-block w-100" alt="inicio">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/experiencias.jpeg" class="d-block w-100" alt="experencia">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/casa.jpeg" class="d-block w-100" alt="casa">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
 
@@ -54,28 +72,34 @@
     
     </main>
     
-    <footer>
-        <div class="seguinos">
-            <h3>SEGUINOS</h2>
-            <p>ENTERATE DE LAS ULTIMAS NOVEDADES</p>
-            <form action="#" method="POST">
-            <input type="email" placeholder="Ingresá tu email" id="email" required>
-            <button type="submit" class="boton">ENVIAR</button>
+    <footer class="container">
+        <div class="row">
+            <form class="row g-3">
+                <div class="mb-3 col-sm-6">
+                    <h2>SEGUINOS</h2>
+                    <label for="exampleFormControlInput1" class="form-label">ENTERATE DE LAS ULTIMAS NOVEDADES</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ingresa tu email">
+                    <button type="button" class="btn btn-warning">Registrarse</button>
+                </div>
+                <div class="mb-3 col-sm-6">
+                    <h2>Contacto</h2>
+                    <label for="exampleFormControlInput1" class="form-label"></label>
+                    <input type="nombre" class="form-control" id="exampleFormControlInput1" placeholder="nombre">
+                    <label for="exampleFormControlInput1" class="form-label"></label>
+                    <input type="apellido" class="form-control" id="exampleFormControlInput1" placeholder="apellido">
+                    <label for="exampleFormControlTextarea1" class="form-label">Ingrese su consulta</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <button type="button" class="btn btn-warning">Enviar</button>
+
+                </div>
             </form>
         </div>
-        <div class="contacto">
-            <h3>Contacto</h2>
-            <form action="#" method="POST"> 
-                <input type="email" placeholder="Nombre" id="nombre" required>
-                <input type="email" placeholder="Email" id="emailContacto" required>
-                <textarea placeholder="Mensaje" rows="6" cols="40" id="mensaje"></textarea>
-                <button type="submit" class="boton">ENVIAR</button>
-            </form>
-        </div>       
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.min.js"></script>
 </body>
 </html>
