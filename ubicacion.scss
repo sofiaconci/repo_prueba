@@ -1,0 +1,34 @@
+.ubicacion{
+    background-color: rgb(116, 115, 114);
+    color: rgb(13, 172, 172);
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    display: grid;
+    grid-template-areas: "titulo titulo"
+                        "texto imagen";
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 8fr;
+
+
+}
+
+.ubicacion_titulo{
+    grid-area: titulo;
+    background-color: aquamarine;
+
+}
+.ubicacion_texto{
+    grid-area: texto;
+    
+
+}
+.ubicacion_img{
+    grid-area: imagen;
+
+}
+
+.ubicacion_img img{
+    width: 90%;
+}

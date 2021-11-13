@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2? family = Roboto: ital, wght @ 1300 & display = swap');
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* ---------------------------------- NAVEGADOR */
+
+
+header{
+    display: flex;   
+    justify-content: center;
+    align-items: center;  
+}
+
+.navegador{
+    list-style: none;
+    display: flex;
+    padding: 10px;
+    flex-flow: row nowrap ;
+    justify-content: space-evenly;
+}
+
+.navegador li{
+    margin: 50px 50px 10px 50px;
+}
+
+.navegador a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: burlywood;
+    color: azure;
+    margin:5px;
+    padding: 10px;
+    transition: all 2s ;
+
+}
+
+.navegador a:hover{
+    background-color: brown;
+}
+
+/* ------------------------------ INICIO */
+
+.titulos{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../img/portada.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;   
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.titulo_principal{
+    color: black;
+    text-align: center;
+    font-family: 'Bungee Shade', cursive;
+    font-size: 4rem;    
+    line-height: 1.3; 
+}
+
+.titulo_secundario{
+    color: black;
+    text-align: center;
+    font-family: 'Bungee Shade', cursive;
+    font-size: 2rem;    
+    line-height: 1.3;
+}
+
+
+.inicio{
+    color: darkgray;
+    padding: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: center;
+    display: flex;
+}
+
+
+.inicio__img img{
+    width: 70%;
+}
+
+/* -------------------------------- HOSPEDAJE */
+
+
+.hospedaje{
+    background-color: burlywood;
+    color: azure;
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    display: grid;
+    grid-template-areas: "titulo titulo"
+                        "casa carpa";
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr 4fr;
+}
+.hospedaje_titulo{
+    grid-area: titulo;
+}
+.hospedaje_casa{
+    grid-area: casa;
+    justify-content: center;
+    display: grid;
+    grid-template-areas: "tituloCasa"
+                        "imagenCasa"
+                        "textoCasa";
+    grid-template-rows: 1fr 4fr 3fr;
+}
+.titulo_casa{
+    grid-area: tituloCasa;
+    background-color: white;
+    color:burlywood;
+}
+
+.imagen_casa{
+    grid: imagenCasa;
+    justify-content: center;
+    height: 400px; 
+    width: 500px;
+}
+
+.texto_casa{
+    grid: textoCasa;
+
+}
+.hospedaje_carpa{
+    grid-area: carpa;
+    display: grid;
+    grid-template-areas: "tituloCarpa"
+                        "imagenCarpa"
+                        "textoCarpa";
+    grid-template-rows: 1fr 4fr 3fr;
+}
+
+.titulo_carpa{
+    grid-area: tituloCarpa;
+    background-color: white;
+    color:burlywood;
+}
+
+.imagen_carpa{
+    grid: imagenCarpa;
+    height: 400px; 
+    width: 500px;
+
+}
+
+.texto_carpa{
+    grid: textoCarpa;
+
+}
+
+/* ------------------------ EXPERIENCIAS */
+
+
+.experiencias{
+    background-image: linear-gradient(to left, rgb(235, 135, 68) , rgb(134, 177, 226));
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    display: grid;
+    grid-template-areas: "imagen titulo"
+                        "imagen texto";
+    grid-template-rows: 1fr 3fr;
+    
+
+}
+
+.experiencias_titulo{
+    grid-area: titulo;
+}
+
+.experiencias_texto{
+    grid-area: texto;
+}
+
+.experiencias_img{
+    grid-area: imagen;
+}
+
+.experiencias_img img{
+    width:85%;
+}
+
+/* -------------------------------- UBICACION */
+
+.ubicacion{
+    background-color: burlywood;
+    color: azure;
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    display: grid;
+    grid-template-areas: "titulo titulo"
+                        "texto imagen";
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 8fr;
+
+
+}
+
+.ubicacion_titulo{
+    grid-area: titulo;
+
+}
+.ubicacion_texto{
+    grid-area: texto;
+    
+
+}
+.ubicacion_img{
+    grid-area: imagen;
+
+}
+
+.ubicacion_img img{
+    width: 90%;
+}
+/* ------------------------------- CONTACTOS */
+.contactoPrincipal{
+    display: flex;  
+    justify-content: center;
+    margin-top: 10rem;   
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+}
+
+
+.redes{
+    background-color: burlywood;
+    flex-basis: 40%; 
+    padding-left: 1rem; 
+
+}
+
+.telefonos{
+    flex-basis: 40%; 
+    padding-left: 1rem; 
+
+}
+
+.email{
+    background-color: burlywood;
+    flex-basis: 40%; 
+    padding-left: 1rem; 
+
+}
+
+
+/* ---------------------------------- FOOTER */
+
+footer {  
+    padding: 2rem 0; 
+    margin-top: 5rem;   
+    margin-bottom: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;   
+    background-color: burlywood;
+    display: flex;  
+    justify-content: center; 
+}
+footer p{
+    margin-bottom: 0.8rem;
+}
+.seguinos{
+    flex-basis: 40%; 
+    padding-left: 1rem;  
+
+}
+.seguinos h2,p{
+    flex-basis: 100%;
+}
+.contacto{
+    flex-basis: 45%;
+}
+.contacto form{
+    display: grid;
+    grid-template-rows: 2rem 2rem 2rem;
+    grid-template-columns: auto auto;
+    align-content: center;   
+    grid-gap:0.7rem
+} 
+.contacto #nombre {
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+.contacto #emailContacto{
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+.contacto textarea{
+    grid-row: 1/4;
+    grid-column: 2/3;
+}
+.contacto button {  
+    grid-row: 3/4;
+    grid-column: 1/2;
+    justify-self: start;
+}
+.boton{
+    padding: 0.4rem;
+    border-color:#f5772e;
+    background-color: #f5772e;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 0.80rem;
+    font-family: 'Inconsolata', monospace;
+}
+.boton:hover{
+    border-color: white;  
+    color: white;  
+    background-color:burlywood;
+}
+
+input,textarea{
+    padding: 0.4rem;
+    font-family: 'Inconsolata', monospace;
+    background-color: rgb(251, 251, 251);
+
+}
+
+

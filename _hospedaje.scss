@@ -1,0 +1,81 @@
+@mixin grid{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+$main-color:white;
+$text-color:rgb(192, 191, 191);
+$bg-color:rgb(97, 65, 4);
+$theme: "normal";
+
+
+
+.hospedaje{
+    @include grid;
+    background-color:$bg-color;
+    color: azure;
+    text-align: center;
+    padding: 2rem;
+    margin: 5px;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    grid-template-areas: "titulo titulo"
+                        "casa carpa";
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr 4fr;
+        .hospedaje__titulo{
+            grid-area: titulo; 
+        }
+        .hospedaje__casa{
+            @include grid;
+            grid-area: casa;
+            grid-template-areas: "tituloCasa"
+                                "imagenCasa"
+                                "textoCasa";
+            grid-template-rows: 1fr 4fr 3fr;
+            .hospedaje__casa--titulo{
+                grid-area: tituloCasa;
+                background-color:$main-color;
+                color: $bg-color;
+            }
+            .hospedaje__casa--imagen{
+                grid: imagenCasa;
+                justify-content: center;
+                height: 400px; 
+                width: 500px;
+            }
+            .hospedaje__casa--texto{
+                grid: textoCasa;
+            }
+        }
+
+        .hospedaje__carpa{
+            @include grid;
+            grid-area: carpa;
+            grid-template-areas: "tituloCarpa"
+                                "imagenCarpa"
+                                "textoCarpa";
+            grid-template-rows: 1fr 4fr 3fr;
+
+            .hospedaje__carpa--titulo{
+                grid-area: tituloCarpa;
+                background-color: $main-color;
+                color: $bg-color;
+            }
+            .hospedaje__carpa--imagen{
+                grid: imagenCarpa;
+                height: 400px; 
+                width: 500px;
+            }
+            .hospedaje__carpa--texto{
+                grid: textoCarpa;
+            
+            }
+        }
+}
+
+
+
+
+
+

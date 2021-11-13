@@ -1,0 +1,25 @@
+.experiencias{
+    background-image: linear-gradient(to left, rgb(235, 135, 68) , rgb(134, 177, 226));
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    display: grid;
+    grid-template-areas: "imagen titulo"
+                        "imagen texto";
+    grid-template-rows: 1fr 3fr;
+    .experiencias__titulo{
+        grid-area: titulo;
+    }
+    .experiencias__texto{
+        grid-area: texto;
+    }
+    .experiencias__img{
+        grid-area: imagen;
+    }
+    .experiencias__img img{
+        width:85%;
+    }
+}
+
