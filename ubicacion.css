@@ -7,7 +7,8 @@
   line-height: 1.8rem;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "titulo titulo" "texto imagen";
+      grid-template-areas: "titulo titulo"
+ "texto imagen";
   -ms-grid-columns: 3fr 1fr;
       grid-template-columns: 3fr 1fr;
   -ms-grid-rows: 1fr 8fr;
@@ -28,13 +29,5 @@
   grid-area: texto;
 }
 
-.ubicacion_img {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: imagen;
-}
 
-.ubicacion_img img {
-  width: 90%;
-}
 /*# sourceMappingURL=ubicacion.css.map */

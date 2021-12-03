@@ -7,16 +7,7 @@
   display: inline-block;
 }
 
-.header__menu a {
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
-  font-family: sans-serif;
-  font-size: 1rem;
-  color: white;
-  padding: 1rem;
-  background-color: #faca70;
-}
+
 
 .main__titulos {
   display: -webkit-box;
